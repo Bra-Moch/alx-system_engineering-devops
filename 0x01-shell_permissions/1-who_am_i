@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "The effective username is: $(id -un)"
+id -un
+
