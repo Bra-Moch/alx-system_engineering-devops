@@ -1,14 +1,2 @@
 #!/bin/bash
-current_dir=$(pwd)
-parent_dir=$(dirname "$current_dir")
-for file in *.html; do
-  if [[ -e "$parent_dir/$file" ]]; then
-    if [[ "$current_dir/$file" -nt "$parent_dir/$file" ]]; then
-      cp "$current_dir/$file" "$parent_dir/$file"
-      echo "Copied $file to parent directory"
-    fi
-  else
-    cp "$current_dir/$file" "$parent_dir/$file"
-    echo "Copied $file to parent directory"
-  fi
-done
+for f in *.html; do [[ -e "../$f" ]] && [[ "$f" -nt "../$f" ]] && cp "$f" "../$f"; done
