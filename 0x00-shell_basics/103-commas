@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1d ./* | sed 's,^\./$,./,; s,/$,/,; s,^\./\.\.$,\.\./,' | LC_ALL=C sort -d -f -k1.1 | tr '\n' ',' | sed 's/,$/\n/'
+ls -xamp
