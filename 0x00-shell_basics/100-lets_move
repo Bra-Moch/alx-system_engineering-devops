@@ -1,1 +1,2 @@
+#!/bin/bash
 cp -uv [A-Z]* /tmp/u/
