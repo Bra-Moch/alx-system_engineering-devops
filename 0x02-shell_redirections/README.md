@@ -27,3 +27,12 @@ The find command is used to search for files in the current directory and its su
 
 ## 11 Don't just count your directories, make your directories count
 The find command is used to search for directories in the current directory and its subdirectories. The -mindepth 1 option specifies that we want to exclude the current directory from the search, and the -type d option specifies that we only want to find directories. The wc -l command counts the number of lines (which corresponds to the number of directories found by find).
+
+## 12 displays the 10 newest files in the current directory
+ls -tp lists all files in the current directory, sorted by modification time, and appends a / to the end of directory names.
+grep -v / filters out directory names (which have a / at the end).
+head -10 outputs the first 10 lines (i.e., the 10 newest files).
+The resulting output will be one file per line, sorted from newest to oldest.
+
+## 14 Display lines containing the pattern “root” from the file
+This will search for the pattern "root" in the file /etc/passwd and display all lines that contain the pattern. The output will be printed to the terminal.
