@@ -24,3 +24,6 @@ The ls -la command is run, which lists the files and directories in the current 
 
 ## 10 No more Javascript
 The find command is used to search for files in the current directory and its subdirectories. The -type f option specifies that we only want to find regular files (not directories or other types of files). The -name "*.js" option specifies that we want to find files with a .js extension. Finally, the -delete option deletes the files that match the search criteria.
+
+## 11 Don't just count your directories, make your directories count
+The find command is used to search for directories in the current directory and its subdirectories. The -mindepth 1 option specifies that we want to exclude the current directory from the search, and the -type d option specifies that we only want to find directories. The wc -l command counts the number of lines (which corresponds to the number of directories found by find).
