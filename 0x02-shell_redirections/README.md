@@ -14,5 +14,8 @@ the script cat /etc/passwd command will display the contents of the /etc/passwd 
 This script uses the cat command to display the contents of both files, separated by a newline character.
 
 ##4 Display last 10 lines of a file
-This script uses tail comand to display the last 10 lines of the file.
+This script uses tail command to display the last 10 lines of the file.
+
+##5 Display first 10 lines of a file
+This script uses head command to display the first 10 lines of the file.
 
