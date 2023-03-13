@@ -22,3 +22,5 @@ This script uses head command to display the first 10 lines of the file.
 ##8 Saving current state of directory
 The ls -la command is run, which lists the files and directories in the current working directory, including hidden files and directories, in long format. The > operator is used to redirect the output of the ls -la command to the file ls_cwd_content. If the file already exists, it will be overwritten. If it does not exist, it will be created.
 
+## 10 No more Javascript
+The find command is used to search for files in the current directory and its subdirectories. The -type f option specifies that we only want to find regular files (not directories or other types of files). The -name "*.js" option specifies that we want to find files with a .js extension. Finally, the -delete option deletes the files that match the search criteria.
