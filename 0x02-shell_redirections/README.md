@@ -19,3 +19,6 @@ This script uses tail command to display the last 10 lines of the file.
 ##5 Display first 10 lines of a file
 This script uses head command to display the first 10 lines of the file.
 
+##8 Saving current state of directory
+The ls -la command is run, which lists the files and directories in the current working directory, including hidden files and directories, in long format. The > operator is used to redirect the output of the ls -la command to the file ls_cwd_content. If the file already exists, it will be overwritten. If it does not exist, it will be created.
+
